@@ -1,0 +1,67 @@
+/*==============================================
+/*==============================================
+/*==============================================
+ HOBBIES
+/*==============================================
+/*==============================================
+/*=============================================*/
+
+.hobbies{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hobbies-posts{
+  	width: min(1200px, 100%);
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	cursor: pointer;
+}
+
+.post{
+	width: calc(33% - 10px);
+	overflow: hidden;
+}
+
+.hobbies-img{
+	width: 100%;
+	border-radius: 6px;
+	transition: .3s linear;
+	height: 300px;
+}
+
+.hobbies-content{
+	background-color: #ffffffdd;
+	margin: 0 20px;
+	padding: 30px;
+	border-radius: 6px;
+	transform: translateY(-60px);
+	transition: .3s linear;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.hobbies-content h3{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+
+.post:hover .hobbies-img{
+  	transform: translateY(20px);
+}
+
+.post:hover .hobbies-content{
+  	transform: translateY(-80px);
+}
+
+@media screen and (max-width: 1200px){
+	.hobbies-posts{
+		justify-content: center;
+	}
+	.post{
+		width: min(600px, 100%);
+	}
+}

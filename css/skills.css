@@ -1,0 +1,257 @@
+/*==============================================
+/*==============================================
+/*==============================================
+ SKILLS
+/*==============================================
+/*==============================================
+/*=============================================*/
+
+#skills{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width:90%;
+	margin:auto auto 50px auto;
+}
+
+.skill-text{
+	width:400px;
+}
+
+.skill-img{
+	width: 600px;
+	height: 600px;
+}
+
+.skill-img img{
+	width:100%;
+	height: 100%;
+	object-fit: contain;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.skill-heading span{
+	color:#36b7b5;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1rem;
+}
+
+.skill-heading h2{
+	color: #1c3548;
+	font-size: 3.3rem;
+	margin:0px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.s-box-container{
+	margin-top: 30px;
+}
+
+.skill-box{
+	display: flex;
+	margin: 25px 0px;
+}
+
+.s-box-icon{
+	margin-right:12px;
+}
+
+.s-box-icon i{
+	width:40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f0f0f0;
+	font-size: 1.1rem;
+}
+
+.s-box-text strong{
+	color:#1c3548;
+	margin: 0px;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.s-box-text p{
+	color:#747474;
+	font-size: 0.9rem;
+}
+
+.fa-html5{
+	color:#e06061;
+}
+
+.fa-css3-alt{
+	color:#416cdf;
+}
+
+.fa-js-square{
+	color:#f98231;
+}
+
+/*==============================================
+/*==============================================
+/*==============================================
+ MORE SKILLS
+/*==============================================
+/*==============================================
+/*=============================================*/
+
+#moreSkills{
+	margin: 100px 0 70px 0;
+	background-image: url("../images/bg.png");
+	background-position: center;
+	background-size: 1000px;
+	position: relative;
+	width: 84%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.titleMoreSkills{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#moreSkills .skill-bars{
+	margin: auto;
+	padding: 25px 30px;
+	width: 100%;
+	background: #fff;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+	border-radius: 10px;
+}
+
+#moreSkills .skill-bars .bar{
+  	margin: 20px 0;
+}
+
+#moreSkills .skill-bars .bar:first-child{
+  	margin-top: 0px;
+}
+
+#moreSkills .skill-bars .bar .info{
+  	margin-bottom: 5px;
+}
+
+#moreSkills .skill-bars .bar .info span{
+	font-weight: 500;
+	font-size: 17px;
+	opacity: 0;
+	animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+	100%{
+		opacity: 1;
+	}
+}
+
+#moreSkills .skill-bars .bar .progress-line{
+	height: 10px;
+	width: 100%;
+	background: #f0f0f0;
+	position: relative;
+	transform: scaleX(0);
+	transform-origin: left;
+	border-radius: 10px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+				0 1px rgba(255,255,255,0.8);
+	animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+#moreSkills .bar .progress-line span{
+	height: 100%;
+	position: absolute;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	background: #23cdaf;
+	animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate {
+	100%{
+	  transform: scaleX(1);
+	}
+}
+
+#moreSkills .bar .progress-line.html span{
+  	width: 30%;
+}
+
+#moreSkills .bar .progress-line.css span{
+  	width: 70%;
+}
+
+#moreSkills .bar .progress-line.jquery span{
+  	width: 85%;
+}
+
+#moreSkills .bar .progress-line.python span{
+  	width: 50%;
+}
+
+#moreSkills .bar .progress-line.mysql span{
+  	width: 75%;
+}
+
+#moreSkills .progress-line span::before{
+	position: absolute;
+	content: "";
+	top: -10px;
+	right: 0;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color: #000;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+#moreSkills .progress-line span::after{
+	position: absolute;
+	top: -28px;
+	right: 0;
+	font-weight: 500;
+	background: #000;
+	color: #fff;
+	padding: 1px 8px;
+	font-size: 12px;
+	border-radius: 3px;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+	100%{
+		opacity: 1;
+	}
+}
+
+#moreSkills .progress-line.html span::after{
+  	content: "30%";
+}
+
+#moreSkills .progress-line.css span::after{
+  	content: "70%";
+}
+
+#moreSkills .progress-line.jquery span::after{
+  	content: "85%";
+}
+
+#moreSkills .progress-line.python span::after{
+  	content: "50%";
+}
+
+#moreSkills .progress-line.mysql span::after{
+  	content: "75%";
+}

@@ -1,0 +1,52 @@
+/*==============================================
+/*==============================================
+/*==============================================
+ FOOTER
+/*==============================================
+/*==============================================
+/*=============================================*/
+
+footer{
+	position: relative;
+	background: url(../images/bg2.png) no-repeat center;
+	color: #fff;
+	padding: 80px 0;
+	text-align: center;
+}
+  
+footer .copyright{
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+  
+footer .copyright a{
+	font-size: 16px;
+	color: #23cdaf;
+	font-weight: 500;
+}
+
+footer .sm a{
+	color: #fff;
+	font-size: 22px;
+	margin: 0 10px;
+	transition: .2s linear;
+}
+  
+footer .sm a:hover{
+	color: #23cdaf;
+}
+
+.goTop{
+	position: absolute;
+	z-index: 1;
+	bottom: 20px;
+	right: 1%;
+	width: 40px;
+	height: 40px;
+	background-color: #23cdaf;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	color: #fff;
+	outline: none;
+}

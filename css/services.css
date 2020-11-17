@@ -1,0 +1,136 @@
+/*==============================================
+/*==============================================
+/*==============================================
+ SERVICES
+/*==============================================
+/*==============================================
+/*=============================================*/
+
+.services{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+.services .s-heading{
+	text-align:center;
+}
+
+.services .s-heading h1{
+	color:#576975;
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 0px;
+}
+
+.services .s-heading p{
+	color: rgba(87,105,117,0.60);
+	font-size: 1rem;
+	margin: 5px;
+	text-align: center;
+}
+
+.services .s-box-container{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.services .s-box{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	width:300px;
+	padding: 20px 25px;
+	height: 400px;
+	box-sizing: border-box;
+	margin: 30px;
+	position: relative;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.08);
+	transition: all ease 0.3s;
+}
+
+.services .s-box img{
+	height: 75px;
+}
+
+.services .s-box h1{
+	color:#576975;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+}
+
+.services .s-box p{
+	color: rgba(87,105,117,0.90);
+	text-align: center;
+}
+
+.services .s-btn{
+	width: 140px;
+	height: 40px;
+	border-radius: 20px;
+	border:1px solid#23cdaf;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#576975;
+	margin-top:10px; 
+}
+
+.services .bar{
+	width: 100px;
+	height: 6px;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	transform: translateX(-50%);
+	background-color:#23cdaf; 
+	border-radius: 0px 0px 10px 10px;
+	display: none;
+	animation: bar 0.5s;
+}
+
+.services .s-btn:hover{
+	background-color:#23cdaf;
+	border: 1px solid #fff;
+	color:#FFFFFF;
+	transition: all ease 0.3s;
+}
+
+.services .s-box:hover .bar{
+	display: block;
+}
+
+@keyframes bar{
+	0%{
+		width:0px;
+	}
+	100%{
+		width:100px;
+	}
+}
+
+@media(max-width:1050px){
+	.services .s-box-container{
+		flex-wrap: wrap;
+		
+	}	
+	.services{
+		height: auto;
+	}
+	.services .s-heading{
+		margin: 15px;
+	}
+	.services .s-box{
+		flex-grow: 1;
+	}
+}

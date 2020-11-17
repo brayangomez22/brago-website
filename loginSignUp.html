@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>My WebSite - Login & Sign Up</title>
+    <link rel="shortcut icon" href="./images/logo.png">
+
+    <!------- MY STYLES -------->
+    <link rel="stylesheet" href="./css/loginSignUp.css"/>
+
+    <!------- PLUGIN ANIMATE CSS -------->
+    <link rel="stylesheet" href="./css/plugins/animate.css">
+
+    <!--using FontAwesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="main wow zoomIn delay-1s">
+        <!--img------------------->
+        <div class="main-img">
+            <img src="images/model.svg"/>
+        </div>
+        <!--text-and-btns--------------->
+        <div class="text-btns">
+            <p>Hola amigo! Inicia sesión para que disfrutes aún más de todos mis servicios y no olvides que juntos lo lograremos.</p>
+            <!--login-and-sign-up-btns------->
+            <div class="btns">
+                <a href="#" class="login-btn">Iniciar sesión</a>
+                <a href="#" class="sign-up-btn">Registrate</a>
+            </div>
+            <!--login-with-social-media------------>
+            <span>O a través de las redes sociales</span>
+            <!--social----------------->
+            <div class="via-social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-google"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+
+        <!--side-login-bar----------------------------------------->
+        <div class="side-login">
+            <!--cancel-btn--------------->
+            <a href="#" class="login-cancel-btn">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <!--heading-------->
+            <strong>Iniciar Sesión</strong>
+            <!--form------------------------>
+            <form>
+                <!--email---->
+                <label>Email<samp>*</samp></label>
+                <div class="email">
+                    <i class="far fa-paper-plane"></i>
+                    <input type="email" name="email" required>
+                </div>
+                <!--password---->
+                <label>Contraseña<samp>*</samp></label>
+                <div class="password">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" required>
+                </div>
+                <!--login-btn-->
+                <input type="submit" name="login" class="login" value="Iniciar sesión">
+                <!--forget------------>
+                <a href="#" class="forget">¿Olvidaste tu contraseña?</a>
+            </form>
+            <!--relative-bottom-text------------------->
+            <div class="relative-text">
+                <span>Bienvenido a Brago</span>
+                <p>Registrarse en Brago le permite acceder al estado e historial de su pedido. Simplemente complete los campos a continuación y obtendremos una nueva cuenta configurada para usted en poco tiempo. Solo te pediremos la información necesaria para que el proceso de compra de su web sea más rápido y sencillo.</p>
+            </div>
+        </div>
+
+        <!--side-sign-up-bar----------------------------------------->
+        <div class="side-sign-up">
+            <!--cancel-btn--------------->
+            <a href="#" class="sign-up-cancel-btn">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <!--heading-------->
+            <strong>Regístrate</strong>
+            <!--form------------------------>
+            <form>
+                <!--password---->
+                <label>Nombre completo<samp>*</samp></label>
+                <div class="name">
+                    <i class="far fa-copy"></i>
+                    <input type="text" name="fullname" required>
+                </div>
+                <!--email---->
+                <label>Email<samp>*</samp></label>
+                <div class="email">
+                    <i class="far fa-paper-plane"></i>
+                    <input type="email" name="email" required>
+                </div>
+                <!--password---->
+                <label>Contraseña<samp>*</samp></label>
+                <div class="password">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" required>
+                </div>
+                
+                <!--login-btn-->
+                <input type="submit" name="login" class="sign-up" value="Regístrate">
+            </form>
+            <!--relative-bottom-text------------------->
+            <div class="relative-text">
+                <span>Regístrese para una mejor experiencia</span>
+                <p>Registrarse en Brago le permite acceder al estado e historial de su pedido. Simplemente complete los campos a continuación y obtendremos una nueva cuenta configurada para usted en poco tiempo. Solo te pediremos la información necesaria para que el proceso de compra de su web sea más rápido y sencillo.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Jquery------------>
+    <script type="text/javascript" src="./js/plugins/Jquery.js"></script>
+
+    <!------- WOW ANIMATION -------->
+    <script type="text/javascript" src="./js/plugins/wow.min.js"></script>
+
+    <!------- MAIN JS -------->
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    <!--script---------->
+    <script type="text/javascript">
+        $(document).on('click','.login-btn,.sign-up-btn',function(){
+            $('.main').addClass('main-active')
+        });
+
+        $(document).on('click','.login-btn',function(){
+            $('.side-login').addClass('side-login-active')
+        });
+
+        $(document).on('click','.sign-up-btn',function(){
+            $('.side-sign-up').addClass('side-sign-up-active')
+        });
+
+        $(document).on('click','.sign-up-cancel-btn,.login-cancel-btn',function(){
+            $('.main').removeClass('main-active')
+        });
+        $(document).on('click','.login-cancel-btn',function(){
+            $('.side-login').removeClass('side-login-active')
+        });
+        $(document).on('click','.sign-up-cancel-btn',function(){
+            $('.side-sign-up').removeClass('side-sign-up-active')
+        });
+    </script>
+</body>
+</html>
