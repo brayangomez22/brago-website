@@ -107,7 +107,7 @@ $(window).on("load", function(){
     
                 if(result.value){
                 
-                    window.location = "../#main";
+                    window.location = "../Brago";
     
                 }
     
