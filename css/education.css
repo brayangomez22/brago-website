@@ -60,6 +60,11 @@
     padding: 30px;
     position: relative;
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    transition: 0.5s ease;
+}
+
+#education .block:hover{
+    transform: translateY(-10px);
 }
   
 #education .block::before{
