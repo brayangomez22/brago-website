@@ -8,9 +8,9 @@
     <link rel="shortcut icon" href="./images/logo.png">
 
     <!------- MY STYLES -------->
-    <link rel="stylesheet" href="./css/loginSignUp.css"/>
+    <link rel="stylesheet" href="./css/loginSignUp.css"/>|
 
-    <!------- PLUGIN ANIMATE CSS -------->
+    <!------- PLUGIN CSS -------->
     <link rel="stylesheet" href="./css/plugins/animate.css">
 
     <!--using FontAwesome-->
@@ -19,6 +19,7 @@
 </head>
 <body>
     <section class="main wow zoomIn delay-1s">
+        <a href="index.html" class="login-btn" style="padding: 10px;border-radius: 4px;position: absolute;top: 20px;left: 20px;">Volver</a>
         <!--img------------------->
         <div class="main-img">
             <img src="images/model.svg"/>
@@ -87,24 +88,24 @@
             <!--heading-------->
             <strong>Regístrate</strong>
             <!--form------------------------>
-            <form>
+            <form id="formSignUp" method="POST">
                 <!--password---->
                 <label>Nombre completo<samp>*</samp></label>
                 <div class="name">
                     <i class="far fa-copy"></i>
-                    <input type="text" name="fullname" required>
+                    <input type="text" id="name" name="fullname" required>
                 </div>
                 <!--email---->
                 <label>Email<samp>*</samp></label>
                 <div class="email">
                     <i class="far fa-paper-plane"></i>
-                    <input type="email" name="email" required>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <!--password---->
                 <label>Contraseña<samp>*</samp></label>
                 <div class="password">
                     <i class="fas fa-lock"></i>
-                    <input type="password" name="password" required>
+                    <input type="password" id="password" name="password" required>
                 </div>
                 
                 <!--login-btn-->
@@ -118,15 +119,18 @@
         </div>
     </section>
 
-
     <!--Jquery------------>
     <script type="text/javascript" src="./js/plugins/Jquery.js"></script>
 
     <!------- WOW ANIMATION -------->
     <script type="text/javascript" src="./js/plugins/wow.min.js"></script>
 
+    <!------- SWEETALERT JS -------->
+    <script type="text/javascript" src="./js/plugins/sweetalert2.all.js"></script>
+
     <!------- MAIN JS -------->
     <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/validateFormSignUp.js"></script>
 
     <!--script---------->
     <script type="text/javascript">

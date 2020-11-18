@@ -27,7 +27,6 @@
 
     <!------- PLUGIN ANIMATE CSS -------->
     <link rel="stylesheet" href="./css/plugins/animate.css">
-    <link rel="stylesheet" href="./css/plugins/sweetalert.css">
 
     <!--using FontAwesome--------------->
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
@@ -57,7 +56,7 @@
           <li><a href="#portfolio">Portafolio </a></li>	
           <li><a href="#client">Cliente</a></li>	
           <li><a href="#contact">Contacto</a></li>	
-          <li><a href="loginSignUp.html" target="_blank">Login</a></li>	
+          <li><a href="loginSignUp.html">Login</a></li>	
         </ul>
         <!--say-hey--------->
         <a href="#" class="hey">JC!</a>
@@ -411,7 +410,7 @@
       <div class="recent-heading titleMoreSkills wow zoomIn delay-1s">
           <span>Portafolio</span>
       </div>
-      <div class="containerPortfolio wow zoomIn delay-1s">
+      <div class="containerPortfolio">
         <div class="header">
           <form action="">
             <input type="text" class="search-bar" id="search-bar" placeholder="Buscar">
@@ -561,8 +560,8 @@
 	  <section id="client" class="wow zoomIn delay-1s">
       <!--heading------->
       <div class="client-heading">
-        <span>Comments</span>
-        <h3>Client's Say</h3>
+        <span>Comentarios</span>
+        <h3>Opinión del cliente</h3>
       </div>
 
       <!--client-box-container--------------->
@@ -647,7 +646,7 @@
       <h3>Obtenga la mejor estimación de proyectos</h3>
       <!--input----------------->
       <div class="contact-input">
-        <input type="email" placeholder="Example@gmail.com"/>
+        <input type="email" placeholder="Ejemplo@gmail.com"/>
         <a href="#">Seguir</a>
       </div>
     </section>
@@ -672,7 +671,7 @@
 
         <!--inputs------------------>
         <div class="c-inputs">
-          <form method="post" onsubmit="return validateContactUs()">
+          <form id="formContact" method="post">
             <input type="text" id="name" placeholder="Nombre completo"/>	
             <input type="email" id="email" placeholder="Ejemplo@gmail.com"/>
             <textarea name="message" id="note" placeholder="Escribe un mensaje"></textarea>

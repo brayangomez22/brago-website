@@ -194,6 +194,14 @@
 	border: 2px solid #FFFFFF;
 }
 
+h6.alert-danger{
+	font-size: 18px;
+	background-color: #e8505b;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px;
+}
+
 @media(max-width:1100px){
 	.map{
 		display: none;

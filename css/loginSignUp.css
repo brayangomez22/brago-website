@@ -117,6 +117,12 @@ a{
     background-color: #ffffff;
     box-shadow: 3px 5px 30px rgba(0,0,0,0.1);
 }
+
+.side-login:hover,
+.side-sign-up:hover{
+    cursor: pointer;
+}
+
 .side-login strong,
 .side-sign-up strong{
     font-size: 1.3rem;
@@ -261,6 +267,14 @@ a{
     display:block;
     animation: side-bar 0.2s;
 
+}
+
+h6.alert-danger{
+	font-size: 18px;
+	background-color: #e8505b;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px;
 }
 
 @keyframes main{
