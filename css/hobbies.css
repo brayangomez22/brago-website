@@ -65,3 +65,64 @@
 		width: min(600px, 100%);
 	}
 }
+
+/*==============================================
+/*==============================================
+ PERSONAL GOALS
+/*==============================================
+/*=============================================*/
+
+.containerGoals{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 100px;
+}
+
+.containerGoals .box{
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin: 30px;
+	font-size: 2em;
+	text-align: center;
+	background: #fff;
+	color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	color: rgba(0,0,0,0.1);
+	transition: 0.5s;
+}
+
+.containerGoals .box:hover{
+	transform: translateY(-10px);
+}
+
+.containerGoals .box.shadow1{
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+                15px 15px 15px  rgba(0,0,0,0.1);
+}
+
+.containerGoals .box.shadow2{
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+                15px 15px 15px  rgba(0,0,0,0.1), 
+                inset -10px -10px 10px rgba(255, 255, 255, 0.2),
+                inset 15px 15px 15px  rgba(0,0,0,0.1);
+}
+
+.containerGoals .box.shadow3{
+    box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3),
+                inset -4px -4px 5px rgba(0,0,0,0.1), 
+                10px 40px 40px  rgba(0,0,0,0.1);
+}
+
+.containerGoals .box.shadow4{
+    border: 10px solid rgb(250, 248, 248);
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+                15px 15px 15px  rgba(0,0,0,0.1), 
+                inset -10px -10px 10px rgba(255, 255, 255, 0.2),
+                inset 15px 15px 15px  rgba(0,0,0,0.1);
+}

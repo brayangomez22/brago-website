@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url(../images/bg.png);
+    background-size: cover;
 }
 
 .containerBusiness{
@@ -15,14 +17,13 @@
     grid-template-rows: minmax(100px, auto);
     margin: 40px;
     grid-auto-flow: dense;
-    grid-gap: 10px
+    grid-gap: 10px;
 }
 
 .containerBusiness .box{
     background: #fff;
-    padding: 15px;
+    padding: 90px;
     display: grid;
-    font-size: 20px;
     place-items: center;
     text-align: center;
     color: #333;

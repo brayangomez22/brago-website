@@ -12,6 +12,8 @@
 	justify-content: center;
 	align-items: center;
 	margin:40px 0px;
+	background-image: url(../images/bg.png);
+	background-size: cover;
 }
 
 #contact h3{
@@ -264,7 +266,7 @@ h6.alert-danger{
     align-items: center;
     flex-direction: column;
     transition: 0.5s;
-    background: #ff3579;
+    background: #2adabc;
     transform: scale(0);
     transition-delay: 0s;
 }
@@ -272,14 +274,6 @@ h6.alert-danger{
 .containerContactInfo .box:hover .content{
     transform: scale(1);
     transition-delay: 0.5s;
-}
-
-.containerContactInfo .box:nth-child(2) .content{
-    background: #2ba1ff;
-}
-
-.containerContactInfo .box:nth-child(3) .content{
-    background: #c630e0;
 }
 
 .containerContactInfo .box .content .icon img{
