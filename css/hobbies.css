@@ -89,11 +89,10 @@
 	font-size: 2em;
 	text-align: center;
 	background: #fff;
-	color: rgb(32, 32, 32);
     display: flex;
     justify-content: center;
     align-items: center;
-	color: rgba(0,0,0,0.1);
+	color: rgb(105, 104, 104);
 	transition: 0.5s;
 }
 

@@ -1,4 +1,11 @@
 $(document).ready(function(){
+
+    //=============================================
+    // PRELOADER 
+    //=============================================
+    
+    $("#preloader").delay(1000).addClass('loaded');
+    
     // WOW Instance
     new WOW().init();
     

@@ -26,6 +26,86 @@ a{
 /*==============================================
 /*==============================================
 /*==============================================
+ PRELOADER
+/*==============================================
+/*==============================================
+/*=============================================*/
+
+#preloader {
+    position: fixed;
+    width: 100%;
+	height: 100%;
+    z-index: 5000;
+}
+
+#preloader.loaded {
+    visibility: hidden;
+}
+
+#preloader.loaded .loading-area {
+    opacity: 0;
+}
+
+#preloader .loading-area {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    		transform: translate(-50%, -50%);
+	opacity: 1;
+    z-index: 1;
+    -webkit-transition: all .5s ease-in-out;
+    		transition: all .5s ease-in-out;
+}
+
+#preloader.loaded .loading-area .circle {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto 50px auto;
+	-webkit-border-radius: 50%;
+			border-radius: 50%;
+	border: 3px solid #2adabc;
+	border-top-color: #0e0f10;
+	-webkit-animation: spinner 1s infinite linear;
+			animation: spinner 1s infinite linear;
+}
+
+#preloader.loaded .left-side {
+	-webkit-transform: translateX(-100%);
+    		transform: translateX(-100%);
+	-webkit-transition-delay: 1s;
+    		transition-delay: 1s;
+}
+
+#preloader .left-side {
+    left: 0;
+}
+
+#preloader.loaded .right-side {
+	-webkit-transform: translateX(100%);
+			transform: translateX(100%);
+	-webkit-transition-delay: 1s;
+    		transition-delay: 1s;
+}
+
+#preloader .right-side {
+    right: 0;
+}
+
+#preloader .left-side,
+#preloader .right-side {
+	position: absolute;
+	width: 50%;
+    height: 100%;
+	background: #0e0f10;
+    -webkit-transition: all .7s ease-in-out;
+			transition: all .7s ease-in-out;
+}
+
+/*==============================================
+/*==============================================
+/*==============================================
  NAV
 /*==============================================
 /*==============================================
