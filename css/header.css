@@ -71,6 +71,21 @@ a{
 			animation: spinner 1s infinite linear;
 }
 
+/* Animation Spinner */
+@-webkit-keyframes spinner {
+	to {
+		-webkit-transform: rotateZ(360deg);
+				transform: rotateZ(360deg);
+	}
+}
+
+@keyframes spinner {
+	to {
+		-webkit-transform: rotateZ(360deg);
+				transform: rotateZ(360deg);
+	}
+}
+
 #preloader.loaded .left-side {
 	-webkit-transform: translateX(-100%);
     		transform: translateX(-100%);
